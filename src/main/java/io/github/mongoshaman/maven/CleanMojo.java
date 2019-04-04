@@ -4,12 +4,12 @@ import org.apache.maven.plugins.annotations.Mojo;
 
 import io.github.mongoshaman.core.Shaman;
 
-@Mojo(name = "migrate")
-public class MigrateMojo extends AbstractMongoShamanMojo {
+@Mojo(name = "clean")
+public class CleanMojo extends AbstractMongoShamanMojo {
 
   protected void doExecute(Shaman shaman) {
-    getLog().info("Migrating...");
-    shaman.migrate();
+    getLog().info("Cleaning...");
+    shaman.clean();
   }
 
 }
